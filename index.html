@@ -1,0 +1,38 @@
+<!DOCTYPE! html>
+<html>
+<head>
+</head>
+<body>
+  <script>
+    //vowels finding function
+     function find(word)
+    {
+     let count=0; 
+	  
+	  for(i=1;i<=word.length;i++){
+		if(word[i]=='a'||word[i]=='e'||word[i]=='i'||word[i]=='o'||word[i]=='u'){
+		  count+=1;
+        }
+       }
+	   return count;
+	}
+	//count comparision function
+	function compare(word1,word2)
+	{
+		let a= find(word1);
+		let b= find(word2);
+		if(a>b){
+		 console.log(word1+" is have highest vowels ="+a)
+		}
+		else{
+		 console.log(word2+" is have highest vowels ="+b)
+		}
+	
+    }
+	//comparing vowels count
+ let word1 = prompt("enter a name1");
+ let word2 = prompt("enter name2");
+ compare(word1,word2);
+  </script>
+</body>
+</html>
